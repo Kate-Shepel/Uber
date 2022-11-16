@@ -9,6 +9,14 @@ header {
 nav {
     height: 50px;
     background-color: #212121;
+
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.subheader {
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
 }
 
 .menu {
@@ -98,6 +106,7 @@ nav {
     line-height: 60px;
     margin: 0;
     text-align: center;
+    margin-top: 50px;
 }
 
 .promo_subheader {
