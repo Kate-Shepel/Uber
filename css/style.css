@@ -3,7 +3,7 @@
 }
 
 header {
-    posiion: relative;
+    position: relative;
 }
 
 nav {
@@ -134,4 +134,86 @@ nav {
     text-transform: uppercase;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
     color: #FFFFFF;
+}
+
+.advantages {
+    min-height: 850px;
+    padding: 18px 433px 64px 423px;
+}
+
+.advantages_btn {
+    width: 113px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+.col_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.col_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.advantages_header {
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 33px;
+    margin-bottom: 16px;
+}
+
+.advantages_reason {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.advantages_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 116px;
+    background-color: #1EACC7;
+    border-radius: 50%;
+}
+
+.advantage_text_left {
+    width: 371px;
+}
+
+.advantage_text_right {
+    width: 340px;
+    margin-right: 25px;
+}
+
+.advantage_header {
+font-weight: 400;
+font-size: 17px;
+align-items: center;
+color: #1EACC7;
+}
+
+.advantage_descr {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    align-items: center;
+    color: #202020;
 }
