@@ -383,46 +383,78 @@ nav
         left: 50%
         transform: translateX(-50%)
 .footer 
-    padding: 12px 21px 10px 23px
-    min-height: 156px
-    display: flex
-    justify-content: space-between
-    &_social_list
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-    &_list
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        list-style-type: none
-        gap: 13px
-    &_sublist_big
-        display: flex
-        flex-direction: row
-        justify-content: space-around
-        align-items: center
-        width: 390px
-        font-weight: 300
-        font-size: 15px
-        text-transform: uppercase
-        color: $dark
-    &_sublist_small
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        width: 390px
-        font-weight: 300
-        font-size: 11px
-        text-transform: uppercase
-        color: #999999
-    &_language
-        font-weight: 400
-        font-size: 11px
-        display: block
+    padding: 14px 23px 39px 23px
+    a 
+        &:hover 
+            text-decoration: none 
+    &_divider
+        width: 300px
+        height: 4px
+        background-color: $brand_color
         margin: 0 auto
-        /* align-items: center
-        /* text-align: center
-        text-transform: uppercase
-        color: #1FBAD6
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+    &_wrapper > div
+        width: 33%
+        &:nth-child(3)
+            display: flex
+            justify-content: flex-end
+    &_social
+        display: flex
+        justify-content: space-between
+        
+        width: 160px
+    &_social_item
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 4px
+        width: 32px
+        height: 32px
+        transition: color .3s ease-in-out
+        background-color: #070716
+        border-radius: 100%
+        cursor: pointer
+        i
+            color: #fff
+    &_links
+        width: 390px
+        margin: 0 auto
+        &_main
+            display: flex
+            justify-content: space-between
+            padding: 0 10px
+            a
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+        &_sub
+            display: flex
+            justify-content: space-between
+            margin-top: 10px
+            a
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+        &_lang
+            display: block 
+            margin: 0 auto
+            color: #1fbad6
+            font-size: 11px
+            font-weight: 400
+            margin-top: 19px
+            text-transform: uppercase
+            text-align: center
+    &_stores 
+        display: flex
+        justify-content: space-between
+        gap: 7px
+        cursor: pointer
+        &_link img
+            border-radius: 3px
+
