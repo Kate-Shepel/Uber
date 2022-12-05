@@ -12,6 +12,16 @@
             align-items: flex-start
         &_descr
             width: 300px 
+    .mobile
+        &_item
+            width: 300px
+    .footer
+        &_stores
+            flex-direction: column
+            align-items: flex-end
+        &_links
+            margin: 0 auto 0 -35px
+
 @media (max-width: 991px)
     .menu
         &_item
@@ -44,6 +54,30 @@
         &_text
             width: 300px 
             margin-top: 20px
+    .mobile
+        &_item
+            width: 230px
+            height: 250px
+            &_subtitle
+                font-size: 16px
+    .possibilities
+        min-height: 710px
+        &_car
+            width: 70%
+        &_second_part
+            height: 285px
+        &_we_better
+            bottom: 90px
+    .cities
+        min-height: 450px
+    .footer
+        &_social
+            width: 90px
+            flex-wrap: wrap
+            gap: 18px 0
+        &_links
+            margin: 0 auto 0 -75px
+        
 
 @media (max-width: 767px)
     .menu
@@ -113,6 +147,67 @@
         &_header
             line-height: 45px
             margin: 0
+    .title
+        font-size: 25px
+        margin-top: 25px
+            
+    .mobile
+        &_item
+            width: 250px
+            height: 240px
+            &_subtitle
+                line-height: 20px
+                font-size: 15px
+    .possibilities
+        min-height: 565px
+        &_car
+            width: 70%
+            margin: 22px 0 auto 0
+        &_second_part
+            height: 200px
+        &_we_better
+            bottom: 45px
+    .require
+        padding: 45px 0 45px 0
+        &_block
+            margin: 10px 0
+        &_title
+            font-size: 20px
+        &_list
+            margin-top: 7px
+            li
+                font-size: 15px
+                line-height: 24px
+                margin-bottom: 3px
+    .cities
+        padding: 24px 0 30px 0
+        min-height: 400px
+        &_watch
+            bottom: 30px
+    .footer
+        min-height: 255px
+        &_social
+            width: 160px
+            flex-wrap: nowrap
+            gap: 18px 0
+        &_links
+            display: block
+            width: 350px
+            margin: 0 auto
+        &_wrapper
+            flex-direction: column
+            align-items: center
+            gap: 20px
+        &_wrapper > div
+            width: 100%
+            &:nth-child(1)
+                order: 2
+                display: flex
+                justify-content: center
+            &:nth-child(3)
+                order: 3
+                flex-direction: row
+                justify-content: center
 @media (max-width: 575px)
     nav
         height: 30px
@@ -169,8 +264,79 @@
             font-size: 16px
         &_descr
             font-size: 15px
-
     .title
-        margin-top: 15px
-        font-size: 15px
+        margin-top: 16px
+        font-size: 16px
         line-height: 16px
+    .subtitle
+        font-size: 14px
+        margin-top: 9px
+        line-height: 21px
+    .mobile
+        padding: 25px 0 43px 0
+        .row
+            margin-top: 27px
+        &_item
+            width: 290px
+            height: 254px
+            margin-bottom: 30px
+            &_subtitle
+                font-weight: 400
+                font-size: 18px
+                line-height: 31px
+    .possibilities
+        min-height: 393px
+        padding: 25px 0 31px 0
+        .title
+            display: none
+        .subtitle
+            display: none
+        &_car
+            width: 95%
+            margin: 36px 0 auto 0
+        &_second_part
+            height: 0
+        &_we_better
+            color: #FFFFFF
+            bottom: 31px
+            width: 279px
+    .require
+        min-height: 960px
+        padding: 22px 0 30px 0
+        &_block
+            margin: 30px 0 0 0
+            padding: 0
+        &_title
+            font-size: 16px
+        &_list
+            padding-left: 32px
+            margin-bottom: 0
+            li
+                font-size: 14px
+                line-height: 16px
+                &::before
+                    top: 0
+                    height: 19px
+                    width: 20px
+        &_descr
+            font-size: 14px
+            line-height: 16px
+            padding-top: 15px
+    .cities
+        min-height: 360px
+    .footer
+        padding: 27px 0 45px 0
+        &_divider
+            width: 253px
+        &_links
+            width: 285px
+            &_main a
+                font-size: 14px
+                padding: 0
+            &_sub
+                width: 246px
+                margin: 10px auto 0 auto
+                gap: 13px
+                flex-wrap: wrap
+                a
+                    font-size: 11px
